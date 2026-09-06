@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#120916">
+<title>For Tanu ✨</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family: Georgia, "Times New Roman", serif;
+  background: radial-gradient(circle at top, #3b183e 0%, #160b1b 45%, #09060d 100%);
+  color:#fff5fb; min-height:100vh; overflow-x:hidden;
+}
+.stars{position:fixed;inset:0;pointer-events:none;z-index:0}
+.star{position:absolute;width:3px;height:3px;background:#fff;border-radius:50%;opacity:.7;animation:twinkle 3s infinite}
+@keyframes twinkle{50%{opacity:.15;transform:scale(.6)}}
+.container{position:relative;z-index:1;max-width:850px;margin:auto;padding:24px 18px 60px}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.badge{letter-spacing:3px;text-transform:uppercase;font:12px Arial,sans-serif;color:#f7b9dc;margin-bottom:18px}
+h1{font-size:clamp(54px,15vw,105px);font-weight:400;line-height:.9;margin-bottom:20px}
+h1 span{color:#ff9fd0}
+.subtitle{font:16px Arial,sans-serif;line-height:1.7;color:#e8d7e5;max-width:560px}
+.btn{
+  margin-top:30px;border:1px solid #f49ac9;background:#ffffff10;color:#fff;
+  padding:14px 24px;border-radius:999px;text-decoration:none;font:600 14px Arial,sans-serif;
+  backdrop-filter:blur(8px);transition:.25s
+}
+.btn:hover{background:#ff9fd0;color:#190b18;transform:translateY(-2px)}
+section{padding:70px 0}
+.card{
+  background:#ffffff0d;border:1px solid #ffffff18;border-radius:28px;padding:30px;
+  backdrop-filter:blur(12px);box-shadow:0 20px 70px #0005;margin-bottom:28px
+}
+.section-title{text-align:center;font-size:36px;font-weight:400;margin-bottom:12px}
+.section-sub{text-align:center;color:#d9c5d5;font:14px Arial,sans-serif;margin-bottom:30px}
+.letter{font-size:20px;line-height:1.9;color:#f8e9f3}
+.letter .signature{margin-top:25px;color:#ffacd4;font-size:23px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.photo{
+  aspect-ratio:1/1;border-radius:22px;overflow:hidden;position:relative;
+  background:linear-gradient(135deg,#5b2759,#1d1022);border:1px solid #ffffff18;
+}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.placeholder{
+  width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:20px;color:#e8bfd7;font:14px Arial,sans-serif
+}
+.photo:last-child{grid-column:span 2;aspect-ratio:16/8}
+.reasons{display:grid;gap:12px}
+.reason{padding:18px 20px;border-radius:18px;background:#ffffff09;border:1px solid #ffffff12;font:15px Arial,sans-serif;line-height:1.6}
+.reason b{color:#ffabd3;margin-right:8px}
+.final{text-align:center;padding-bottom:20px}
+.final h2{font-size:46px;font-weight:400;margin-bottom:18px}
+.final p{font:15px Arial,sans-serif;color:#ddc9d8;line-height:1.8}
+.footer{text-align:center;color:#a991a5;font:12px Arial,sans-serif;padding-top:30px}
+#surprise{display:none;margin-top:25px;padding:25px;border-radius:22px;background:#ff9fd01a;border:1px solid #ff9fd055}
+#surprise.show{display:block;animation:pop .5s ease}
+@keyframes pop{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
+.heart{position:fixed;pointer-events:none;font-size:20px;animation:float 4s linear forwards;z-index:10}
+@keyframes float{to{transform:translateY(-100vh) rotate(30deg);opacity:0}}
+@media(max-width:520px){
+ .card{padding:22px}.gallery{grid-template-columns:1fr 1fr}
+ .letter{font-size:18px}.final h2{font-size:38px}
+}
+</style>
+</head>
+<body>
+<div class="stars" id="stars"></div>
+
+<main class="container">
+  <section class="hero">
+    <div class="badge">A little birthday corner for</div>
+    <h1>Tanu <span>♡</span></h1>
+    <p class="subtitle">
+      Some people deserve more than just a “Happy Birthday” message.
+      So here's a tiny website made especially for your day.
+    </p>
+    <a class="btn" href="#letter">Open your surprise ↓</a>
+  </section>
+
+  <section id="letter">
+    <div class="card">
+      <h2 class="section-title">A little letter 💌</h2>
+      <p class="section-sub">For Tanu, on 7 September</p>
+      <div class="letter">
+        Happy Birthday, Tanu! ✨<br><br>
+        Today is your day, and I hope it brings you the kind of happiness
+        that stays long after the candles are gone.
+        <br><br>
+        I don't need a huge list of memories to make this day special.
+        Sometimes, simply having someone who makes ordinary moments feel
+        a little brighter is enough.
+        <br><br>
+        So here's a small reminder: keep smiling, keep being yourself,
+        and never forget how much your presence can mean to someone.
+        <br><br>
+        I hope this new year of your life gives you beautiful surprises,
+        peaceful days, lots of laughter, and countless reasons to smile.
+        <div class="signature">— Krish ♡</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Five little frames 📸</h2>
+    <p class="section-sub">Replace these with your five favourite photos.</p>
+    <div class="gallery">
+      <div class="photo"><div class="placeholder">PHOTO 1<br>Replace with your image</div></div>
+      <div class="photo"><div class="placeholder">PHOTO 2<br>Replace with your image</div></div>
+      <div class="photo"><div class="placeholder">PHOTO 3<br>Replace with your image</div></div>
+      <div class="photo"><div class="placeholder">PHOTO 4<br>Replace with your image</div></div>
+      <div class="photo"><div class="placeholder">PHOTO 5<br>Replace with your image</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="card">
+      <h2 class="section-title">A few reasons ✨</h2>
+      <p class="section-sub">No ranking. They're all important.</p>
+      <div class="reasons">
+        <div class="reason"><b>01</b> Your smile can make an ordinary day feel different.</div>
+        <div class="reason"><b>02</b> You have a way of making moments worth remembering.</div>
+        <div class="reason"><b>03</b> You deserve to be celebrated—not only today.</div>
+        <div class="reason"><b>04</b> You bring your own kind of magic wherever you go.</div>
+        <div class="reason"><b>05</b> And simply because… you're Tanu. ♡</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <h2>One last thing…</h2>
+    <p>
+      This little page may be made of code, but the wish behind it is simple:
+      <br>Happy Birthday, Tanu. 🌙✨
+    </p>
+    <button class="btn" onclick="reveal()">Tap for a tiny surprise</button>
+    <div id="surprise">
+      <div style="font-size:30px;margin-bottom:10px">🎂 ✨ 💗 ✨ 🎂</div>
+      <p style="font-size:18px;color:#fff">May 7 September be the beginning of an amazing year for you.</p>
+      <p style="margin-top:10px;color:#ffafd4">— With lots of good wishes, Krish</p>
+    </div>
+  </section>
+
+  <div class="footer">Made with ♡ for Tanu • 7 September</div>
+</main>
+
+<script>
+const stars=document.getElementById('stars');
+for(let i=0;i<90;i++){
+  const s=document.createElement('div'); s.className='star';
+  s.style.left=Math.random()*100+'%'; s.style.top=Math.random()*100+'%';
+  s.style.animationDelay=Math.random()*3+'s'; stars.appendChild(s);
+}
+function reveal(){
+  document.getElementById('surprise').classList.add('show');
+  for(let i=0;i<18;i++){
+    setTimeout(()=>{
+      const h=document.createElement('div'); h.className='heart'; h.textContent=['♡','♥','✦'][Math.floor(Math.random()*3)];
+      h.style.left=Math.random()*100+'vw'; h.style.bottom='0';
+      document.body.appendChild(h); setTimeout(()=>h.remove(),4000);
+    },i*100);
+  }
+}
+</script>
+</body>
+</html>
